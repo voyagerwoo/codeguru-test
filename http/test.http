@@ -1,0 +1,16 @@
+### DB check
+GET http://localhost:8080/check/dynamodb/phone-number
+
+### 전화번호 조회
+GET http://localhost:8080/v1/phone-number?name=우여명
+
+### 전화번호 등록
+POST http://localhost:8080/v1/phone-number
+Content-Type: application/json
+
+{
+  "name": "우여명",
+  "phoneNumber": "010-9441-9460"
+}
+
+###
